@@ -1,13 +1,13 @@
 //? Bot = telegraf_toplearn_bot
 
-require("dotenv").config();
+// require("dotenv").config();
 const { Telegraf } = require("telegraf");
 const axios = require("axios");
 
-const { TOKEN } = process.env;
+// const { TOKEN } = process.env;
 
 //? Create the bot
-const myBot = new Telegraf(TOKEN);
+const myBot = new Telegraf("6066622113:AAF_1U5tadO0zGyj7EjNtMEF55iZssCCYVY");
 
 // myBot.use((ctx) => {
 //     // console.log(ctx);
