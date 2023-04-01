@@ -1,0 +1,22 @@
+{
+    "devDependencies": {
+        "@types/node": "^16.11.6",
+        "nodemon": "^2.0.14"
+    },
+    "dependencies": {
+        "axios": "^0.24.0",
+        "dotenv": "^10.0.0",
+        "telegraf": "^4.4.2"
+    },
+    "name": "telegraf-framework",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "dev": "nodemon index.js"
+    },
+    "keywords": [],
+    "author": "Younes Ghorbany",
+    "license": "ISC",
+    "description": "Telegram Bot API Telegraf framework"
+}
