@@ -38,7 +38,7 @@ myBot.action('fasleh11',(ctx)=>{
 myBot.action('fasleh12',(ctx)=>{
     ctx.deleteMessage();
     ctx.telegram.sendChatAction(ctx.chat.id,'upload_document')
-    ctx.sendDocument(ctx.chat.id,{source:"res/doc2.pdf"})
+    ctx.telegram.sendDocument(ctx.chat.id,{source:"res/doc2.pdf"})
 })
 
 
