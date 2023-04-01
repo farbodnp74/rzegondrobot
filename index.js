@@ -15,8 +15,32 @@ const myBot = new Telegraf(TOKEN );
 // });
 
 myBot.start((ctx) => {
-    ctx.reply("خوش آمدی به آرزگوند");
+    // ctx.reply("خوش آمدی به آرزگوند");
+    ctx.telegram.sendMessage(ctx.chat.id,'خوش آمدی به آرزگوند',{
+        reply_markup:{
+            inline_keyboard:[
+                [{
+                text:"فایل شیمی فصل 11" ,callback_data:"fasleh11"
+                },
+                {
+                    text:"فایل شیمی فصل 12" ,callback_data:"fasleh12"
+                }]
+            ]
+        }
+    })
 });
+
+myBot.action('fasleh11',(ctx)=>{
+    ctx.deleteMessage();
+    ctx.telegram.sendChatAction(ctx.chat.id,'upload_document')
+    ctx.sendDocument(ctx.chat.id,{source:"res/doc1.pdf"})
+})
+myBot.action('fasleh12',(ctx)=>{
+    ctx.deleteMessage();
+    ctx.telegram.sendChatAction(ctx.chat.id,'upload_document')
+    ctx.sendDocument(ctx.chat.id,{source:"res/doc2.pdf"})
+})
+
 
 myBot.help((ctx) => {
     ctx.reply(`دستورات \n /start : خوش آمد گویی`);
