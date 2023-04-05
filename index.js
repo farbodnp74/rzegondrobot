@@ -135,10 +135,10 @@ require("dotenv").config();
 const { Telegraf } = require("telegraf");
 const axios = require("axios");
 
-// const { TOKEN } = process.env;
+const { TOKEN } = process.env;
 
 //? Create the bot
-const myBot = new Telegraf('6249639845:AAFcAQwqXsrfqPTpzJpflQB7wJdCzCZLtD0');
+const myBot = new Telegraf(TOKEN);
 
 // myBot.use((ctx) => {
 //     // console.log(ctx);
