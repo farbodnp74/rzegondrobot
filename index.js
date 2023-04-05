@@ -1,7 +1,7 @@
 //? Bot = telegraf_toplearn_bot
 const puppeteer = require('puppeteer');
 const cheerio = require('cheerio');
-const mongoose = require('mongoose');
+// const mongoose = require('mongoose');
 const schedule = require('node-schedule');
 
 // const scrapedModel = require('./model');
@@ -26,7 +26,7 @@ const schedule = require('node-schedule');
     }];*/
 
 async function connectDB() {
-    await mongoose.connect('mongodb://localhost:27017/scrape_rahavard');
+    // await mongoose.connect('mongodb://localhost:27017/scrape_rahavard');
     console.log('Connected to Database');
 }
 
