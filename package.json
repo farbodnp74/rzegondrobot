@@ -11,7 +11,7 @@
         "cheerio": "^1.0.0-rc.12",
         "mongoose": "^6.5.2",
         "node-schedule": "^2.1.0",
-        "puppeteer": "19.7.5"
+        "puppeteer": "18.1.0"
     },
     "name": "telegraf-framework",
     "version": "1.0.0",
